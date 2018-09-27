@@ -15,7 +15,7 @@ Each machine uses two network interface, one for access the Internet with type "
 The compute instances in this lab will be provisioned using [Ubuntu Server](https://www.ubuntu.com/server) 16.04, which has good support for the [cri-containerd container runtime](https://github.com/kubernetes-incubator/cri-containerd). Each compute instance will be provisioned with a fixed private IP address to simplify the Kubernetes bootstrapping process.
 
 
-### 用 Vagrant 启动虚拟机
+### Start a virtual machine with Vagrant
 
 ```
 vagrant up
@@ -53,9 +53,9 @@ worker-2                  running (virtualbox)
 ```
 
 ## Kubernetes Master VIP
-Vagrant 创建虚拟机时会执行部署脚本`heartbeat.sh`，用 heartbeat 在 3 个 controller 节点上建立 VIP: 192.168.100.100。此 IP 用于外部访问 Kubernetes。
+When Vagrant creates a virtual machine, it executes the deployment script `heartbeat.sh` and uses heartbeat to create VIP on three controller nodes: 192.168.100.100. This IP is used for external access to Kubernetes.
 
-### 验证
+### verification
 ```
 ping -c 1 192.168.100.100
 ```

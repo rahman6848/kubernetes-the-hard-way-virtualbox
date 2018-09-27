@@ -6,8 +6,7 @@ This tutorial leverages the [VirtualBox](https://www.virtualbox.org/) to streaml
 
 ### Vagrant
 
-使用 [Vagrant](https://www.vagrantup.com/) 管理虚拟机资源，使用 [vagrant-hosts](https://github.com/oscar-stack/vagrant-hosts) 插件管理虚拟机中的`/etc/hosts`文件。
-
+Manage virtual machine resources using [Vagrant] (https://www.vagrantup.com/) and manage the virtual machines in the [vagrant-hosts](https://github.com/oscar-stack/vagrant-hosts) plugin `/etc/hosts` file.
 ```
 vagrant plugin install vagrant-hosts
 ```
